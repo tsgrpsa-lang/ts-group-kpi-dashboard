@@ -340,7 +340,7 @@ with left:
     )
 with right:
     if Path(DEFAULT_LOGO_PATH).exists():
-        st.image(DEFAULT_LOGO_PATH, use_container_width=True)
+        st.image(DEFAULT_LOGO_PATH, use_column_width=True)
     else:
         st.markdown(
             f"<div class='section-card'><b>Logo not found.</b><br><span class='small-muted'>Set TS_LOGO_PATH or place logo2017.png beside the app.</span></div>",
